@@ -1,0 +1,1 @@
+this is the Assignment of day 7 in ITI client side Technologies in training in ITI ,in it i have made some tasks using HTML ,CSS and JS ,that making task on time interval ,timeout, Registration form and take date from API.
