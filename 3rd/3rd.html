@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conteSnt="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        div{
+            text-align: center;
+            padding: 20px;
+        }
+        form{
+            margin: 100px;
+        }
+        h1{
+            color: #4CAF50;
+            font-size: 30px;
+        }
+        input[type=text],select{
+            width: 60%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 60%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="welcomepage.html" method="get">
+    <h1>Registration Form</h1><br>
+    <input oninput="validateName()" type="text" name="Name" placeholder="Your Name" ><span style="color: red;" id="1"></span><br>
+    <input oninput="validateAdress()" type="text" name="Adress" placeholder="Your Adress EX:Maddi,Cairo,Egypt"><span style="color: red;" id="2"></span><br>
+    <select name="Gender" id="">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <input oninput="validateEmail()" type="text" name="Email" placeholder="Your Email" ><span style="color: red;" id="3"></span><br>
+    <input oninput="validatePhone()" type="text" name="Mobile" placeholder="Your Mobile Number"><span style="color: red;" id="4"></span><br>
+    <input onclick="validate(event)" type="submit" ><span style="color: red;" id="5"></span>
+    </form>
+    </div>
+    <script src="3rd.js"></script>
+</body>
+</html>
